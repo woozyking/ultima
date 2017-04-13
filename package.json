@@ -7,12 +7,14 @@
     "dev": "nodemon build/dev-server.js --watch build --watch config --watch shared",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "demo": "ngrok http 8080"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "johnny-five": "^0.10.7"
+    "johnny-five": "^0.10.7",
+    "ngrok": "^2.2.6"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
